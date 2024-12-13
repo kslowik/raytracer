@@ -1,0 +1,85 @@
+{
+  "camera":
+  {
+    "height": 600,
+    "width": 800,
+    "samples_per_pixel": 64,
+    "defocus_angle": 0.3,
+    "focus_dist": 10.0,
+    "max_depth": 50,
+    "lookfrom": {
+      "x": 13.0,
+      "y": 2.0,
+      "z": 3.0
+    },
+    "lookat": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "vup": {
+      "x": 0.0,
+      "y": 1.0,
+      "z": 0.0
+    },
+    "vfov": 20.0
+  },
+  "object_list": {
+    "objects": [
+      {
+        "Sphere": {
+          "center": {
+            "x": -2.0,
+            "y": 0.0,
+            "z": -1.0
+          },
+          "radius": 1.0,
+          "material": {
+            "Glass": {
+              "refraction_index": 1.5
+            }
+          }
+        }
+      },
+      {
+        "Sphere": {
+          "center": {
+            "x": 1.0,
+            "y": 0.0,
+            "z": -1.0
+          },
+          "radius": 1.0,
+          "material": {
+            "Metal": {
+              "albedo": [
+                0.7,
+                0.6,
+                0.5
+              ],
+              "fuzz": 0.6
+            }
+          }
+        }
+      },
+      {
+        "Sphere": {
+          "center": {
+            "x": 0.0,
+            "y": -1001.0,
+            "z": 0.0
+          },
+          "radius": 1000,
+          "material": {
+            "Lambertian": {
+              "albedo": [
+                0.5,
+                0.5,
+                0.5
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}
